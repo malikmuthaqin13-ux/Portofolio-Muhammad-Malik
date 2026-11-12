@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a28">
+  <meta name="description" content="Portofolio teknisi jaringan dan infrastruktur digital.">
+  <title>Portofolio | Muhammad Malik Muthaqin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigasi atas -->
+  <header class="topbar">
+    <nav class="nav wrap" aria-label="Navigasi utama">
+      <a class="brand" href="#beranda" aria-label="Kembali ke beranda">
+        <span class="avatar avatar-small"><img id="foto-navbar" src="assets/profile.svg" alt="Foto profil"></span>
+        <span class="brand-name"><span data-nama>Nama Anda</span><span class="brand-dot">.</span></span>
+      </a>
+      <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false"><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="#beranda" aria-current="page">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#keahlian">Keahlian</a>
+        <a href="#sertifikat">Sertifikat</a>
+        <a class="nav-cta" href="#kontak">Hubungi saya <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Bagian pembuka -->
+    <section class="hero wrap page-view is-active" id="beranda">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> TERBUKA UNTUK PELUANG BARU</div>
+        <h1>Halo, saya <span class="accent-text" data-nama>Nama Anda</span><br>Saya membangun koneksi<span class="hero-period">.</span></h1>
+        <p class="hero-lead" id="kalimat-pembuka">Selamat datang di portofolio saya.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#tentang">Kenali saya <span>↓</span></a>
+          <a class="button button-quiet" href="#keahlian">Lihat keahlian <span>↗</span></a>
+        </div>
+        <div class="hero-meta"><div class="meta-line"></div><span>JARINGAN · FIBER OPTIK · IT SUPPORT</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="hero-photo"><img id="foto-hero" src="assets/profile.svg" alt="Foto profil"></div>
+        <div class="floating-card card-top"><span class="card-icon">⌁</span><span><b>Network</b><small>Connected</small></span><i></i></div>
+        <div class="floating-card card-bottom"><span class="spark">✳</span><span><b>Selalu belajar</b><small>One connection at a time</small></span></div>
+        <div class="hero-number">01 <span>/ 05</span></div>
+      </div>
+    </section>
+
+    <!-- Tentang saya dan informasi kontak -->
+    <section class="about section page-view" id="tentang" hidden>
+      <div class="wrap">
+        <div class="section-heading">
+          <div><span class="section-kicker">01 — TENTANG SAYA</span><h2>Di balik setiap<br><span class="serif">koneksi.</span></h2></div>
+          <p class="heading-note">Kenali orang yang senang membuat teknologi terasa lebih dekat.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-photo">
+            <img id="foto-tentang" src="assets/profile.svg" alt="Foto profil">
+            <span class="photo-label"><span class="status-dot"></span> SEDANG BERKARYA</span>
+          </div>
+          <div class="about-content">
+            <span class="hello-note">Senang bertemu denganmu <span>✳</span></span>
+            <h3>Membuat hal rumit<br>jadi <em>lebih sederhana.</em></h3>
+            <p class="body-copy">Saya <strong data-nama>Nama Anda</strong>. <span id="tentang-saya">Isi deskripsi singkat tentang diri Anda di data.js.</span></p>
+            <p class="body-copy" id="prinsip-kerja">Ceritakan prinsip atau hal yang Anda sukai dari pekerjaan Anda.</p>
+            <div class="contact-grid">
+              <a href="tel:+6281234567890" class="contact-item" id="kontak-telepon"><span class="contact-icon">↗</span><span><small>TELEPON</small><b id="teks-telepon">+62 812-3456-7890</b></span></a>
+              <a href="mailto:halo@namaanda.com" class="contact-item" id="kontak-email"><span class="contact-icon">✉</span><span><small>EMAIL</small><b id="teks-email">halo@namaanda.com</b></span></a>
+              <div class="contact-item"><span class="contact-icon">⌖</span><span><small>LOKASI</small><b id="teks-alamat">Kota Anda, Indonesia</b></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab keahlian dan galeri foto -->
+    <section class="skills section page-view" id="keahlian" hidden>
+      <div class="wrap">
+        <div class="section-heading">
+          <div><span class="section-kicker">02 — KEAHLIAN</span><h2>Hal yang saya<br><span class="serif">kerjakan.</span></h2></div>
+          <p class="heading-note">Pilih bidang untuk melihat pengalaman dan dokumentasi pekerjaan saya.</p>
+        </div>
+        <div class="skill-tabs" id="skill-tabs" role="tablist" aria-label="Bidang keahlian"></div>
+        <div class="skill-content">
+          <div class="skill-description">
+            <span class="section-kicker" id="skill-index">BIDANG 01</span>
+            <h3 id="skill-title">Keahlian saya.</h3>
+            <p id="skill-copy"></p>
+            <div class="skill-tags" id="skill-tags"></div>
+            <div class="gallery-tip">Dokumentasi foto dapat diganti melalui alamat gambar di data.js.</div>
+          </div>
+          <div class="skill-gallery" id="skill-gallery" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sepuluh kartu sertifikat -->
+    <section class="certificates section page-view" id="sertifikat" hidden>
+      <div class="wrap">
+        <div class="section-heading">
+          <div><span class="section-kicker">03 — SERTIFIKAT</span><h2>Langkah kecil,<br><span class="serif">bukti nyata.</span></h2></div>
+          <p class="heading-note">Pembelajaran dan pencapaian yang membentuk perjalanan profesional saya.</p>
+        </div>
+        <div class="certificate-grid" id="certificate-grid"></div>
+      </div>
+    </section>
+
+    <!-- Ajakan untuk menghubungi -->
+    <section class="contact-band page-view" id="kontak" hidden>
+      <div class="wrap contact-band-inner">
+        <div><span class="section-kicker">ADA PROYEK MENARIK?</span><h2>Mari terhubung<span class="accent-text">.</span></h2></div>
+        <a class="button button-primary" id="email-cta" href="mailto:halo@namaanda.com">Mulai percakapan <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer dan tautan media sosial -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div class="footer-name"><span class="footer-mark">N.</span><span><b data-nama>Nama Anda</b><small id="teks-profesi">Teknisi Jaringan · Indonesia</small></span></div>
+      <span class="copyright">© <span id="year"></span> <span data-nama>Nama Anda</span>. Dibuat dengan sepenuh hati.</span>
+      <div class="social-links">
+        <a id="tautan-github" href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.5 21.63c.55.1.76-.24.76-.53v-2.06c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.02-.7.08-.69.08-.69 1.12.08 1.71 1.15 1.71 1.15 1 .1.76 2.23 3.76 1.7.1-.73.39-1.23.7-1.52-2.47-.28-5.07-1.24-5.07-5.51 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.12-1.44 3.05-1.14 3.05-1.14.61 1.54.23 2.68.12 2.96.71.78 1.14 1.78 1.14 3 0 4.28-2.6 5.22-5.08 5.5.4.35.75 1.03.75 2.08V22c0 .29.2.63.76.52A11.1 11.1 0 0 0 12 .9Z"/></svg>
+        </a>
+        <a id="tautan-instagram" href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="fill" cx="18" cy="6" r="1"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tampilan besar saat sertifikat diklik -->
+  <div class="modal" id="certificate-modal" aria-hidden="true">
+    <button class="modal-close" aria-label="Tutup">×</button>
+    <div class="modal-inner">
+      <div class="modal-image"><img id="modal-image" src="" alt=""></div>
+      <div class="modal-info"><span class="section-kicker" id="modal-number">SERTIFIKAT</span><h2 id="modal-title"></h2><p id="modal-description"></p><small id="modal-issuer"></small></div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
